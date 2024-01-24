@@ -42,7 +42,7 @@ const App = () => {
       "userCreated": new Date().toLocaleTimeString(),
     };
 
-    const response = await fetch("http://34.16.83.155:8080/v1/chat/", {
+    const response = await fetch("http://34.66.186.132:8080/v1/chat/", {
       method: "POST",
       headers: {
         //"Authorization": "Bearer " + API_KEY,
@@ -55,7 +55,7 @@ const App = () => {
   }
 
   const fetchData = async () => {
-    const getResponse = await fetch("http://34.16.83.155:8080/v1/chat/");
+    const getResponse = await fetch("http://34.66.186.132:8080/v1/chat/");
 
     if (getResponse.ok) {
       const text = await getResponse.text();
